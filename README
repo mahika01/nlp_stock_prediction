@@ -1,0 +1,42 @@
+# Tweet Sentiment Analysis and Entity Extraction for Hackbridge
+
+This repository contains a Python script for analyzing financial news sentiment and extracting entities such as price and time targets from a dataset. The script is designed to preprocess the input data, classify sentiment using a pre-trained model, adjust sentiment based on keywords, and extract relevant entities using named entity recognition (NER) techniques.
+
+## Dependencies 
+
+Before running the script, ensure you have the following dependencies installed:
+
+Python3
+pandas
+scikit-learn
+spaCy
+transformers
+torch
+You can install these dependencies using pip:
+
+bash
+pip install pandas scikit-learn spacy transformers torch
+
+
+## Usage
+
+1. Input Data: Prepare your financial news dataset in CSV format. Each row should contain a 'content' column with the text of the news article.
+
+2. Adjust Parameters: Optionally, adjust parameters such as input/output file paths, batch size, and thresholds for sentiment classification according to your requirements.
+
+3. Run the Script: Execute the provided Python script. It will load the dataset, process it in batches, classify sentiment, adjust sentiment based on keywords, extract entities, and save the results to a new CSV file.
+
+```bash
+python financial_sentiment_analysis.py
+```
+
+## Customization
+
+- Preprocessing: You can modify the `preprocess_text` function to add additional text cleaning or preprocessing steps.
+- Sentiment Classification: Adjust the `positive_threshold` and `negative_threshold` variables to control the thresholds for classifying sentiment.
+- Keyword Adjustment: Modify the lists `positive_keywords` and `negative_keywords` to add or remove keywords used for adjusting sentiment.
+- Entity Extraction: Customize the `extract_entities` function to enhance entity extraction based on your specific requirements.
+
+## Note
+
+This script utilizes a pre-trained sentiment classification model and a named entity recognition (NER) model. 
