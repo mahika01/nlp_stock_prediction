@@ -1,4 +1,4 @@
-# Tweet Sentiment Analysis and Entity Extraction for Hackbridge
+# Tweet Sentiment Analysis
 
 This repository contains a Python script for analyzing financial news sentiment and extracting entities such as price and time targets from a dataset. The script is designed to preprocess the input data, classify sentiment using a pre-trained model, adjust sentiment based on keywords, and extract relevant entities using named entity recognition (NER) techniques.
 
